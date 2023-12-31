@@ -16,3 +16,27 @@ Berikut adalah langkah-langkah untuk membuat fungsi terbilang:
   5. Kembali ke spreadsheet, dan sekarang Anda dapat menggunakan fungsi terbilang pada sel spreadsheet. Misalnya, jika Anda ingin menuliskan terbilang dari angka 123, cukup masukkan =terbilang(123) pada sel, dan hasilnya akan otomatis muncul.
 
 <<<-------------------------------------------------------------->>>
+
+**uuidGoogleSheets.gs**
+
+UUID, atau Universally Unique Identifier, adalah format identifikasi unik yang digunakan untuk memberikan identifikasi unik pada berbagai objek atau entitas. UUID biasanya digunakan dalam komputasi terdistribusi dan sistem yang memerlukan identifikasi unik untuk mencegah konflik atau duplikasi.
+
+Di Google Sheets, Anda dapat membuat fungsi UUID menggunakan Google Apps Script. Berikut adalah contoh sederhana untuk membuat fungsi UUID di Google Sheets:
+
+  1. Buka Google Sheets.
+  2. Pilih "Extensions" > "Apps Script" dari menu. copy paste kode dari uuidGoogleSheets.gs
+  3. Save kode
+
+Jika Anda ingin menghasilkan sebuah UUID untuk setiap baris dalam kolom A, Anda dapat menulis formula berikut di sel B1:
+```bash
+=ARRAYFORMULA(IF(A:A<>"", UUID(), ""))
+```
+Formula ini akan menghasilkan UUID untuk setiap sel dalam kolom B hanya jika ada nilai di kolom A.
+
+Jika Anda ingin menghasilkan array UUID dengan panjang tertentu, katakanlah 5, untuk setiap baris dalam kolom A, Anda dapat menggunakan formula berikut di sel B1:
+```bash
+=ARRAYFORMULA(IF(ROW(A:A) <= 5, UUID(), ""))
+```
+Formula ini akan menghasilkan array UUID dengan panjang 5 untuk setiap baris di kolom B.
+
+<<<-------------------------------------------------------------->>>
