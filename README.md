@@ -14,4 +14,5 @@ Berikut adalah langkah-langkah untuk membuat fungsi terbilang:
   3. Di jendela Apps Script yang terbuka, Anda dapat menghapus kode yang ada dan menggantinya dengan kode berikut: **TerbilangScript.gs**
   4. Simpan script dengan memberikan nama seperti "TerbilangScript".
   5. Kembali ke spreadsheet, dan sekarang Anda dapat menggunakan fungsi terbilang pada sel spreadsheet. Misalnya, jika Anda ingin menuliskan terbilang dari angka 123, cukup masukkan =terbilang(123) pada sel, dan hasilnya akan otomatis muncul.
+
 <<<-------------------------------------------------------------->>>
