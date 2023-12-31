@@ -1,6 +1,7 @@
 # GoogleAppScriptCollections
 
 **TerbilangScript.gs**
+
 Fungsi terbilang adalah suatu fungsi yang merubah angka menjadi bentuk kata atau tulisan angka dalam bahasa. Dengan kata lain, fungsi ini mengonversi nilai numerik menjadi bentuk yang lebih mudah dimengerti dalam bahasa manusia. Misalnya, angka 123 dapat diubah menjadi "seratus dua puluh tiga" menggunakan fungsi terbilang.
 
 Fungsi terbilang biasanya digunakan dalam konteks penyusunan dokumen keuangan, pembuatan cek atau dokumen resmi lainnya di mana angka perlu diwakili dalam bentuk kata. Fungsi ini membantu menghindari kesalahan pembacaan atau interpretasi angka, terutama ketika angka yang besar atau kompleks terlibat.
@@ -13,3 +14,4 @@ Berikut adalah langkah-langkah untuk membuat fungsi terbilang:
   3. Di jendela Apps Script yang terbuka, Anda dapat menghapus kode yang ada dan menggantinya dengan kode berikut: **TerbilangScript.gs**
   4. Simpan script dengan memberikan nama seperti "TerbilangScript".
   5. Kembali ke spreadsheet, dan sekarang Anda dapat menggunakan fungsi terbilang pada sel spreadsheet. Misalnya, jika Anda ingin menuliskan terbilang dari angka 123, cukup masukkan =terbilang(123) pada sel, dan hasilnya akan otomatis muncul.
+<<<-------------------------------------------------------------->>>
