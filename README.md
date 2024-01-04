@@ -40,20 +40,4 @@ Jika Anda ingin menghasilkan array UUID dengan panjang tertentu, katakanlah 5, u
 Formula ini akan menghasilkan array UUID dengan panjang 5 untuk setiap baris di kolom B.
 
 <<<-------------------------------------------------------------->>>
-
-**waktu.gs**
-
-Adalah Google Apps Script yang berguna untuk menerjemahkan timestamp ke dalam format tanggal, waktu, dan tanggal-waktu dengan berbagai zona waktu Indonesia (WIB, WITA, WIT). Kode ini dapat dengan mudah diintegrasikan ke dalam spreadsheet Google Sheets dan digunakan dengan bantuan formula ARRAYFORMULA untuk memproses sejumlah besar data timestamp secara otomatis.
-
-  1. Buka Google Apps Script : Buka Google Sheets dan buatlah spreadsheet baru. Selanjutnya, pilih menu "Add-ons" -> "Apps Script" untuk membuka Google Apps Script Editor.
-  2. Salin dan Tempel Kode : Salin dan tempel kode **waktu.gs** ke dalam Google Apps Script Editor:
-  3. Simpan dan Beri Nama Project : Berikan nama project dengan mengklik pada bagian atas kiri yang berisi "Untitled project" dan berikan nama yang sesuai.
-  4. Izinkan Akses : Pastikan memberikan izin yang diperlukan saat diminta oleh Google Apps Script.
-  5. Kembali ke Spreadsheet : Kembali ke Google Sheets dan ketikkan beberapa timestamp di kolom A.
-  6. Gunakan Fungsi dengan ARRAYFORMULA : Di sel B1, ketik formula berikut:
-```bash
-=ARRAYFORMULA(IF(A:A<>"", waktu(A:A), ""))
-```
-  7. Lihat Hasilnya : Setelah beberapa saat, kolom B, C, dan D akan diisi dengan hasil terjemahan timestamp ke date, time, dan datetime dalam Bahasa Indonesia dengan zona waktu yang sesuai.
-<<<-------------------------------------------------------------->>>
   
