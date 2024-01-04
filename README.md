@@ -52,7 +52,7 @@ Adalah Google Apps Script yang berguna untuk menerjemahkan timestamp ke dalam fo
   5. Kembali ke Spreadsheet : Kembali ke Google Sheets dan ketikkan beberapa timestamp di kolom A.
   6. Gunakan Fungsi dengan ARRAYFORMULA : Di sel B1, ketik formula berikut:
 ```bash
-=ARRAYFORMULA(IF(A:A<>"", terjemahkanTimestampArray(A:A), ""))
+=ARRAYFORMULA(IF(A:A<>"", waktu(A:A), ""))
 ```
   7. Lihat Hasilnya : Setelah beberapa saat, kolom B, C, dan D akan diisi dengan hasil terjemahan timestamp ke date, time, dan datetime dalam Bahasa Indonesia dengan zona waktu yang sesuai.
 <<<-------------------------------------------------------------->>>
